@@ -1,21 +1,68 @@
+/* MA CHARTE GRAPHIQUE
+Couleur utilisées
+ - Bleu : #2e3244
+ - Bleu clair : #516079
+ - Orange : #f1895c
+ - Gris : #c5c6c6
+ - Blanc : #ffffff
+
+ Police d'écriture
+ - Roboto
+ */
+
+* {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'roboto-light',"Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
 }
 
 header {
   text-align: center;
-  background-color: black;
-  color: white;
+  background-color: #2e3244;
+  color: #ffffff;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
 }
 
-header h1 {
-  color: #c4a35a;
+h1 {
+  color: #ffffff;
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-weight: normal;
+}
+
+span {
+  color: #f1895c;
+  font-weight: bold;
+}
+
+header h4{
+  font-size:1.1em;
+  font-weight: normal;
+  font-style: italic;
+  width: 500px;
+  margin: auto;
+}
+
+header h4:before{
+  content: "«";
+  color: #f1895c;
+}
+header h4:after{
+  content: "»";
+  color: #f1895c;
 }
 
 nav {
-  background-color: #26495c;
-  text-align: right;
+  background-color: #516079;
+  text-align: center;
   padding: 1px;
+  border-bottom: #f1895c 4px solid;
 }
 
 nav ul li {
@@ -23,18 +70,55 @@ nav ul li {
 }
 
 nav ul li a {
-  font-size: 1.7em;
-  text-transform: uppercase;
-  color: #c4a35a;
+  font-size: 1.5em;
+  color: #ffffff;
   margin: 0 25px;
   text-decoration: none;
 }
 
 nav ul li a:hover {
-  color: white;
+  color: #f1895c;
   font-weight: bold;
 }
 
+nav ul li a:active {
+  color: #f1895c;
+  font-weight: bold;
+  text-decoration: solid;
+}
+
+
 h1 {
   font-size: 3em;
+}
+
+h2 {
+  background-color: #c5c6c6;
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+section {
+  display:block;
+}
+
+.diplome {
+
+}
+
+.date_diplome {
+
+}
+
+.ecole {
+
+}
+
+#diplomes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #c5c6c6;
+
 }
