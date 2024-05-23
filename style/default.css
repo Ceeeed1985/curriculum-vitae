@@ -97,28 +97,68 @@ h2 {
   margin: 0;
   padding-top: 15px;
   padding-bottom: 15px;
+  color: #2e3244;
 }
 
-section {
-  display:block;
+h3 {
+  text-align: center;
+  color: #516079;
+  font-weight: bolder;
 }
 
-.diplome {
-
-}
-
-.date_diplome {
-
-}
-
-.ecole {
-
-}
 
 #diplomes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  max-width: 940px;
+  margin: auto;
   background-color: #c5c6c6;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px,auto);
+}
 
+#diplomes > article {
+  border: 2px solid #2e3244;
+  border-radius:15px;
+  background-color: white;
+  padding: 1em;
+}
+
+#diplomes > article .date_diplome:after {
+  content: " | ";
+  color: #516079;
+}
+
+#section_diplomes {
+  background-color: #c5c6c6;
+}
+
+.titre {
+  grid-column: 1;
+  grid-row:1;
+}
+
+.diplome_01 {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.diplome_02 {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.diplome_03 {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.diplome_04 {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.diplome_05 {
+  grid-column: 2 / 4;
+  grid-row: 3;
 }
