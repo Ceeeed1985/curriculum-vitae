@@ -28,13 +28,41 @@ header {
 
 }
 
+footer{
+  background-color: #2e3244;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+  color: white;
+  .copyright{
+    color:#f1895c;
+  }
+}
+
+/* MES TITRES */
+
 h1 {
   color: #ffffff;
   margin: 0;
   padding-top: 15px;
   padding-bottom: 15px;
   font-weight: normal;
+  font-size: 3em;
 }
+
+h2 {
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: #2e3244;
+}
+
+h3 {
+  text-align: center;
+  color: #516079;
+  font-weight: bolder;
+}
+
 
 span {
   color: #f1895c;
@@ -78,7 +106,7 @@ nav ul li a {
 
 nav ul li a:hover {
   color: #f1895c;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 nav ul li a:active {
@@ -87,34 +115,23 @@ nav ul li a:active {
   text-decoration: solid;
 }
 
+/* SECTION DIPLOMES */
 
-h1 {
-  font-size: 3em;
-}
-
-h2 {
+#section_diplomes {
   background-color: #c5c6c6;
-  margin: 0;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  color: #2e3244;
+  border-bottom: #f1895c 4px solid;
 }
-
-h3 {
-  text-align: center;
-  color: #516079;
-  font-weight: bolder;
-}
-
 
 #diplomes {
   max-width: 940px;
   margin: auto;
+  padding-bottom: 50px;
   background-color: #c5c6c6;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
   grid-auto-rows: minmax(100px,auto);
+  
 }
 
 #diplomes > article {
@@ -122,15 +139,12 @@ h3 {
   border-radius:15px;
   background-color: white;
   padding: 1em;
+  box-shadow: 3px 3px 7px #516079;  
 }
 
 #diplomes > article .date_diplome:after {
   content: " | ";
   color: #516079;
-}
-
-#section_diplomes {
-  background-color: #c5c6c6;
 }
 
 .titre {
@@ -161,4 +175,125 @@ h3 {
 .diplome_05 {
   grid-column: 2 / 4;
   grid-row: 3;
+}
+
+/* SECTION EXPERIENCES */
+#experiences {
+  max-width: 940px;
+  margin: auto;
+  padding-bottom: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px,auto);
+}
+
+#section_experiences {
+  background-color: #2e3244;
+  h2{color: white;}
+}
+
+.titre {
+  grid-column: 1;
+  grid-row:1;
+}
+
+.experience_01 {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.experience_02 {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.experience_03 {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.experience_04 {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.experience_05 {
+  grid-column: 1;
+  grid-row: 4;
+}
+
+.experience_06 {
+  grid-column: 2;
+  grid-row: 4;
+}
+
+#experiences > article {
+  background-color: white;
+  padding: 1em;
+  box-shadow: 2px 2px 5px #ffffff;
+}
+
+
+/* SECTION SKILLS */
+#skills {
+  max-width: 940px;
+  margin: auto;
+  padding-bottom: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px,auto);
+}
+
+#section_skills {
+  background-color: #516079;
+  h2{color: white;}
+}
+
+.titre {
+  grid-column: 1 / 3;
+  grid-row:1;
+}
+
+.skill_00 {
+  grid-column: 1 / 5;
+  grid-row: 2;
+}
+
+.skill_01 {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.skill_02 {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.skill_03 {
+  grid-column: 1;
+  grid-row: 4;
+}
+
+.skill_04 {
+  grid-column: 2;
+  grid-row: 4;
+}
+
+#skills > article {
+  border: 2px solid #2e3244;
+  background-color: white;
+  padding: 1em;
+}
+
+/* SECTION INTERET */
+#section_hobbies {
+  max-width: 940px;
+  margin: auto;
+  padding-bottom: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px,auto);
 }
