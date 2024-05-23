@@ -28,3 +28,17 @@ L'objectif principal est de créer une page web qui constituera un cv en ligne, 
 1. **<span style="color:green">RESOLUE</span>** : Comment structurer à l'aide des colonnes (problèmes dans les 100%) ==> création d'une branche
 2. **<span style="color:green">RESOLUE</span>** : Comment faire disparaitre les bandes blanches au-dessus et en-dessous de nos div ==> connaissance des margins et paddings
 3. **<span style="color:orange">NON RESOLUE</span>** : quels display choisir (inline, block, etc.)
+4. **<span style="color:orange">NON RESOLUE</span>** : pourquoi y-a-t-il un débordement entre une section supérieure et une autre ? (voir photos 01 et 02)
+5. **<span style="color:orange">NON RESOLUE</span>** : comment faire pour que les photos s'adaptent à la taille des "< article >" ? (voir photo 02)
+
+
+## Annexes
+
+### Photo 01
+![Photos problème rencontré 01](pictures/images_rd_01.png)
+
+### Photo 02
+![Photos problème rencontré 02](pictures/images_rd_02.png)
+
+### Photo 03
+![Photos problème rencontré 03](pictures/images_rd_03.png)
